@@ -1,13 +1,13 @@
 # Android-HandsOn-1
 
-Conteúdo "Hand-On" android, é baseado no curso [Developing Android Apps](https://www.udacity.com/course/ud853) desenvolvido pelo Google e Udacity 
+O conteúdo "Android Hands-On 1", é baseado no curso [Developing Android Apps](https://www.udacity.com/course/ud853) desenvolvido pelo Google e Udacity 
 
 ## Pré-Requisitos
 
-- Experiencia em `Java`, `C#` ou alguma linguagem orientada a objetos
-- Possuir um dispositivo android com mais de 80% de bateria
-- Um cabo para conectar o dispositovo ao computador
+- Experiência em `Java`, `C#` ou alguma linguagem orientada a objetos
+- Possuir um dispositivo Android com mais de 80% de bateria
 - Um computador com conexão Wireless, [Java](http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html) e [Android Studio e SDK](http://developer.android.com/sdk/index.html) configurado como descrito abaixo
+- Um cabo para conectar o dispositovo ao computador
 
 ## Conteúdo do Curso
 
@@ -23,46 +23,46 @@ Conteúdo "Hand-On" android, é baseado no curso [Developing Android Apps](https
 - Ir em `Configurações` > `Opções do Desenvolvedor`
 - Habilitar o checkbox no topo da página
 - Habilitar a opção `Debug USB`
-- Plugue seu disposito usando cabo USB no computador, e instale os drivers do fabricante caso necessário
+- Conecte seu disposito usando cabo USB no computador, e instale os drivers do fabricante caso necessário
 
-> OBS: Dependendo da versão do android o processo para habilitar o desenvolvimento e o debug pode ser diferente, se for o caso, pesquise como habilitar no Google
+> OBS: Dependendo da versão do Android, o processo para habilitar o desenvolvimento e o debug pode ser diferente, se for o caso, pesquise como habilitar no Google!
 
 ### 2. Instalando o Java JDK
 
 Para instalar o Java JDK siga os passos abaixo
 
-- Fazer download do [Java JDK na página da Oracle](http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html)
-- Rodar o instalador baixado e seguir o passo-a-passo
-- Abrir o `cmd` e digitar o comando `java -version` para conferir a instalação
+- Faça download do [Java JDK na página da Oracle](http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html)
+- Rode o instalador baixado e seguir o passo-a-passo
+- Abra o `cmd` e digitar o comando `java -version` para conferir a instalação
 
 Para rodar o Android Studio é necessário adicionar a variável JAVA_HOME:
 
-- Botão direito em `Meu Computador` > `Propriedades` > `Configurações Avaçadas do Sistema` > Aba `Avançado` > Botão `Variáveis de Ambiente`
+- Clique com o botão direito em `Meu Computador` > `Propriedades` > `Configurações Avaçadas do Sistema` > Aba `Avançado` > Botão `Variáveis de Ambiente`
 - Na seção `Variáveis do Sistema` > Clicar em `Nova...` 
-- Criar uma nova variável com nome `JAVA_HOME` e valor apontando para a instalação do Java
+- Criar uma variável com nome `JAVA_HOME` e valor apontando para a instalação do Java
   - Em geral o caminho é `C:\Arquivos de Programas\Java\jdk`
 
 ### 3. Instalando o Android Studio
 
-- Navegar até a página [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
-- Realizar o Download e acietar os termos de uso
-- Rodar o executavel baixado, ele irá realizar a instalação do Android Studio e do Android SDK
+- Navegue até a página [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
+- Realize o Download e acietar os termos de uso
+- Rode o executavel baixado, ele irá realizar a instalação do Android Studio e do Android SDK
 
 ### 4. Instalando o Android SDK e ferramentas associadas
 
-- Rodar o `.../Android/SDK Manager.exe`
-- Expandir o item `Tools` e selecionar os itens:
+- Rode o `.../Android/SDK Manager.exe`
+- Expanda o item `Tools` e selecione os itens:
   - Android SDK Tools
   - Android SDK Platform Tools
   - Android SDk Build-Tools
-- Expandir o item `Android API 5.0.1 (API 21)` e selecionar os itens
+- Expanda o item `Android API 5.0.1 (API 21)` e selecione os itens
   - `SDK Platform`
-- Expandir o item `Extras` e selecionar os itens:
+- Expanda o item `Extras` e selecione os itens:
   - `Android Support Repository`
   - `Android Support Library`
   - `Google USB Drive`
 
-Clicar em `Install x Packages` e aceitar as licensas necessárias
+Clique em `Install x Packages` e aceite as licensas necessárias
 
 ### 5. Conferir o set-up
 
