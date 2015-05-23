@@ -1,6 +1,6 @@
 # Android-HandsOn-1
 
-O conteúdo "Android Hands-On 1", é baseado no curso [Developing Android Apps](https://www.udacity.com/course/ud853) desenvolvido pelo Google e Udacity 
+O conteúdo "Android Hands-On 1", é baseado no curso [Developing Android Apps](https://www.udacity.com/course/ud853) desenvolvido pelo Google e Udacity
 
 ## Pré-Requisitos
 
@@ -15,6 +15,7 @@ O conteúdo "Android Hands-On 1", é baseado no curso [Developing Android Apps](
 - Novas Activities e Intents
 - Salvando num banco local
 - Conectando na WEB
+- Extras
 
 ## Como fazer o setup do ambiente
 
@@ -38,7 +39,7 @@ Para instalar o Java JDK siga os passos abaixo
 Para rodar o Android Studio é necessário adicionar a variável JAVA_HOME:
 
 - Clique com o botão direito em `Meu Computador` > `Propriedades` > `Configurações Avaçadas do Sistema` > Aba `Avançado` > Botão `Variáveis de Ambiente`
-- Na seção `Variáveis do Sistema` > Clicar em `Nova...` 
+- Na seção `Variáveis do Sistema` > Clicar em `Nova...`
 - Criar uma variável com nome `JAVA_HOME` e valor apontando para a instalação do Java
   - Em geral o caminho é `C:\Arquivos de Programas\Java\jdk`
 
@@ -68,7 +69,7 @@ Clique em `Install x Packages` e aceite as licensas necessárias
 
 Para ter certeza que tudo foi configurado corretamente:
 
-- Abra um novo `cmd`, naveggue até o local de instalação do Android SDK, dentro do diretório `platform-tools`
+- Abra um novo `cmd`, navegue até o local de instalação do Android SDK, dentro do diretório `platform-tools`
   - Em geral `C:\Android\sdk\platform-tools`
 - Rode o comando `adb devices`
 - Deve ser exibido uma lista com todos os dispositivos conectados no computador
