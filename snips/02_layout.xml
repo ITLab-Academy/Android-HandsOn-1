@@ -1,0 +1,25 @@
+<TextView
+	android:text="@string/hello_world"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+
+<EditText
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" />
+
+<CheckBox android:text="CheckBox"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+
+<RadioButton android:text="Opcao 1"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+
+<ToggleButton android:text="Toggle"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+
+<Button
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Ir para Listagem" />
