@@ -5,7 +5,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "Database";
 
-    private static final String TABLE_NAME = "comentarios";
+    private static final String TABLE_NAME = "Comentarios";
     private static final String COL_Comentario = "Comentario";
     private static final String COL_RepositorioId = "RepositorioId";
 
@@ -42,35 +42,34 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    // Getting All Contacts
+
     public String[] getComments(int repoId) {
-        try {
-            ArrayList<String> contact_list = new ArrayList<>();
 
-            String selectQuery = "SELECT " + COL_Comentario + " FROM " + TABLE_NAME + " WHERE " + COL_RepositorioId + " = " + repoId;
+        String selectQuery =
+                  "SELECT " + COL_Comentario
+                + " FROM " + TABLE_NAME
+                + " WHERE " + COL_RepositorioId + " = " + repoId;
 
-            Log.d("SELECT", selectQuery);
+        Log.d("QUERY", selectQuery);
 
-            SQLiteDatabase db = this.getWritableDatabase();
-            Cursor cursor = db.rawQuery(selectQuery, null);
+        SQLiteDatabase db = this.getReadableDatabase();
 
-            // looping through all rows and adding to list
-            if (cursor.moveToFirst()) {
-                do {
-                    contact_list.add(cursor.getString(0));
-                } while (cursor.moveToNext());
-            }
+        ArrayList<String> commentslist = new ArrayList<>();
 
-            cursor.close();
-            db.close();
+        Cursor cursor = db.rawQuery(selectQuery, null);
 
-            String[] stockArr = new String[contact_list.size()];
+        if (cursor.moveToFirst()) {
 
-            return contact_list.toArray(stockArr);
-        } catch (Exception e) {
-            Log.e("getComments", "" + e);
+            do {
+                commentslist.add(cursor.getString(0));
+            } while (cursor.moveToNext());
+
         }
 
-        return new String[0];
+        cursor.close();
+
+        String[] commentsArray = new String[commentslist.size()];
+
+        return commentslist.toArray(commentsArray);
     }
 }
